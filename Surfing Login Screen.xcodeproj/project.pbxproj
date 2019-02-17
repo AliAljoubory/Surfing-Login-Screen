@@ -14,6 +14,7 @@
 		4889E94E220383860078D543 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4889E94C220383860078D543 /* LaunchScreen.storyboard */; };
 		4889E956220390540078D543 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4889E955220390540078D543 /* CustomButton.swift */; };
 		4889E95822039E430078D543 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4889E95722039E430078D543 /* SecondViewController.swift */; };
+		48A510B122199E76005390C4 /* Surfing Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A510B022199E76005390C4 /* Surfing Data.swift */; };
 		48C76B1F220CB51000987615 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48C76B1E220CB51000987615 /* GoogleService-Info.plist */; };
 		48C76B21220CC53C00987615 /* NewUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C76B20220CC53C00987615 /* NewUserController.swift */; };
 		5EF00A842937D5800166A57B /* Pods_Surfing_Login_Screen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D8AFFC023CAE98653E7B21 /* Pods_Surfing_Login_Screen.framework */; };
@@ -30,6 +31,7 @@
 		4889E94F220383860078D543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4889E955220390540078D543 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		4889E95722039E430078D543 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		48A510B022199E76005390C4 /* Surfing Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Surfing Data.swift"; sourceTree = "<group>"; };
 		48C76B1E220CB51000987615 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		48C76B20220CC53C00987615 /* NewUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserController.swift; sourceTree = "<group>"; };
 		8D15050689C11955BA3C60C1 /* Pods-Surfing Login Screen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Surfing Login Screen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Surfing Login Screen/Pods-Surfing Login Screen.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				4889E943220383840078D543 /* AppDelegate.swift */,
+				48A510B222199E7C005390C4 /* Model */,
 				484406E82210B86300AE6F68 /* Constants */,
 				48726D022210B64F0056E793 /* Controllers */,
 				4889E947220383840078D543 /* Main.storyboard */,
@@ -106,6 +109,14 @@
 				48C76B1E220CB51000987615 /* GoogleService-Info.plist */,
 			);
 			path = "Surfing Login Screen";
+			sourceTree = "<group>";
+		};
+		48A510B222199E7C005390C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48A510B022199E76005390C4 /* Surfing Data.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4A57CB075BE1D1EB4BBB8326 /* Frameworks */ = {
@@ -210,10 +221,12 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Surfing Login Screen/Pods-Surfing Login Screen-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Surfing Login Screen/Pods-Surfing Login Screen-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -221,11 +234,13 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Surfing Login Screen/Pods-Surfing Login Screen-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Surfing Login Screen/Pods-Surfing Login Screen-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -236,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48C76B21220CC53C00987615 /* NewUserController.swift in Sources */,
+				48A510B122199E76005390C4 /* Surfing Data.swift in Sources */,
 				4889E95822039E430078D543 /* SecondViewController.swift in Sources */,
 				4889E946220383840078D543 /* ViewController.swift in Sources */,
 				4889E944220383840078D543 /* AppDelegate.swift in Sources */,

@@ -118,13 +118,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hLN-3e-FOq">
-                                <rect key="frame" x="60" y="425.5" width="294" height="30"/>
+                                <rect key="frame" x="60" y="385.5" width="294" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wcG-xK-3f6">
-                                <rect key="frame" x="60" y="570" width="294" height="30"/>
+                                <rect key="frame" x="60" y="530" width="294" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -147,17 +147,29 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVu-p0-Cbt">
-                                <rect key="frame" x="172" y="370.5" width="70" height="35"/>
+                                <rect key="frame" x="172" y="330.5" width="70" height="35"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favourite Surfing Location?" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IjZ-zQ-dUQ">
-                                <rect key="frame" x="57" y="515.5" width="300" height="34.5"/>
+                                <rect key="frame" x="57" y="475.5" width="300" height="34.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhD-Yf-lj6" customClass="CustomButton" customModule="Surfing_Login_Screen" customModuleProvider="target">
+                                <rect key="frame" x="80" y="646" width="254" height="53"/>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveSurfingData:" destination="DSV-Ts-5U1" eventType="touchUpInside" id="VaU-zT-Idg"/>
+                                    <action selector="surfBackButtonPressed:" destination="DSV-Ts-5U1" eventType="touchUpInside" id="3f8-yk-7TJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -169,12 +181,15 @@
                             <constraint firstItem="WQc-J4-MOE" firstAttribute="leading" secondItem="dEh-Ng-FAm" secondAttribute="leading" constant="80" id="Hvb-Sr-Bv9"/>
                             <constraint firstItem="IjZ-zQ-dUQ" firstAttribute="top" secondItem="hLN-3e-FOq" secondAttribute="bottom" constant="60" id="JtV-oA-SKf"/>
                             <constraint firstItem="wcG-xK-3f6" firstAttribute="leading" secondItem="dEh-Ng-FAm" secondAttribute="leading" constant="60" id="Kfk-yP-xZ1"/>
+                            <constraint firstItem="Iix-Fj-SVg" firstAttribute="top" secondItem="zhD-Yf-lj6" secondAttribute="bottom" constant="60" id="Kz1-h0-31b"/>
                             <constraint firstItem="hLN-3e-FOq" firstAttribute="leading" secondItem="dEh-Ng-FAm" secondAttribute="leading" constant="60" id="LsG-An-Hfe"/>
                             <constraint firstItem="tVu-p0-Cbt" firstAttribute="centerX" secondItem="YXx-pb-z4V" secondAttribute="centerX" id="N1t-bG-dOZ"/>
                             <constraint firstItem="IjZ-zQ-dUQ" firstAttribute="leading" secondItem="dEh-Ng-FAm" secondAttribute="leading" constant="57" id="UAW-yD-3M7"/>
-                            <constraint firstItem="tVu-p0-Cbt" firstAttribute="centerY" secondItem="YXx-pb-z4V" secondAttribute="centerY" constant="-60" id="Yc0-nJ-A4g"/>
+                            <constraint firstItem="tVu-p0-Cbt" firstAttribute="centerY" secondItem="YXx-pb-z4V" secondAttribute="centerY" constant="-100" id="Yc0-nJ-A4g"/>
                             <constraint firstItem="hLN-3e-FOq" firstAttribute="top" secondItem="tVu-p0-Cbt" secondAttribute="bottom" constant="20" id="ZPM-YC-zsP"/>
+                            <constraint firstItem="zhD-Yf-lj6" firstAttribute="leading" secondItem="dEh-Ng-FAm" secondAttribute="leading" constant="80" id="ana-wL-STK"/>
                             <constraint firstItem="Iix-Fj-SVg" firstAttribute="leading" secondItem="dEh-Ng-FAm" secondAttribute="leading" constant="80" id="anq-mg-jKx"/>
+                            <constraint firstItem="dEh-Ng-FAm" firstAttribute="trailing" secondItem="zhD-Yf-lj6" secondAttribute="trailing" constant="80" id="bRd-h0-jTt"/>
                             <constraint firstItem="dEh-Ng-FAm" firstAttribute="trailing" secondItem="Iix-Fj-SVg" secondAttribute="trailing" constant="80" id="bVU-Qj-ix2"/>
                             <constraint firstItem="O5G-rj-72K" firstAttribute="top" secondItem="YXx-pb-z4V" secondAttribute="top" id="eFG-6S-RgU"/>
                             <constraint firstItem="dEh-Ng-FAm" firstAttribute="trailing" secondItem="WQc-J4-MOE" secondAttribute="trailing" constant="80" id="k8m-PA-eGW"/>
@@ -289,7 +304,7 @@
         <image name="wave art" width="1024" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vRx-Nr-nGj"/>
+        <segue reference="674-TN-k50"/>
         <segue reference="oKB-0q-zwP"/>
     </inferredMetricsTieBreakers>
 </document>
