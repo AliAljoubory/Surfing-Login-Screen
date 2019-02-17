@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K7J-xu-G0w">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,283 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Surfing_Login_Screen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfing background" translatesAutoresizingMaskIntoConstraints="NO" id="PrG-pn-7Mf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wave art" translatesAutoresizingMaskIntoConstraints="NO" id="bbh-we-Fzg">
+                                <rect key="frame" x="-10" y="150" width="434" height="200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wavey" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fu0-zk-tep">
+                                <rect key="frame" x="80" y="104" width="254" height="68.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="50"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="id2-aR-TdG">
+                                <rect key="frame" x="60" y="516" width="294" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hKn-6B-6UC">
+                                <rect key="frame" x="60" y="576" width="294" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUI-xU-xaL" customClass="CustomButton" customModule="Surfing_Login_Screen" customModuleProvider="target">
+                                <rect key="frame" x="80" y="666" width="254" height="53"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <state key="normal" title="Surf In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="surfLoginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hk6-8t-OZL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egg-Fv-Wdb" customClass="CustomButton" customModule="Surfing_Login_Screen" customModuleProvider="target">
+                                <rect key="frame" x="120" y="779" width="174" height="33"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="New?">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="newUserButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K4q-qn-eh3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PrG-pn-7Mf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0Ar-ae-jS1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="id2-aR-TdG" secondAttribute="trailing" constant="60" id="0rf-dR-sIE"/>
+                            <constraint firstItem="IUI-xU-xaL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="2A9-v9-AhO"/>
+                            <constraint firstItem="hKn-6B-6UC" firstAttribute="top" secondItem="id2-aR-TdG" secondAttribute="bottom" constant="30" id="2l8-82-mYD"/>
+                            <constraint firstItem="egg-Fv-Wdb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="Dj1-LZ-Y0H"/>
+                            <constraint firstItem="bbh-we-Fzg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="150" id="FQw-jH-1xr"/>
+                            <constraint firstAttribute="trailing" secondItem="bbh-we-Fzg" secondAttribute="trailing" constant="-10" id="JRm-Sg-RDp"/>
+                            <constraint firstItem="id2-aR-TdG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Lt6-CD-W7e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fu0-zk-tep" secondAttribute="trailing" constant="80" id="M7Y-zf-H4e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="egg-Fv-Wdb" secondAttribute="bottom" constant="50" id="O7T-Ht-G6k"/>
+                            <constraint firstItem="IUI-xU-xaL" firstAttribute="top" secondItem="hKn-6B-6UC" secondAttribute="bottom" constant="60" id="ROg-wg-VTF"/>
+                            <constraint firstAttribute="trailing" secondItem="PrG-pn-7Mf" secondAttribute="trailing" id="SnP-bq-HVz"/>
+                            <constraint firstItem="hKn-6B-6UC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="XAA-0B-7Sf"/>
+                            <constraint firstItem="Fu0-zk-tep" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="60" id="abq-Cr-xnV"/>
+                            <constraint firstItem="PrG-pn-7Mf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cYa-Qp-uhb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IUI-xU-xaL" secondAttribute="trailing" constant="80" id="e7G-iU-h15"/>
+                            <constraint firstAttribute="bottom" secondItem="PrG-pn-7Mf" secondAttribute="bottom" id="eXf-Xe-G61"/>
+                            <constraint firstItem="Fu0-zk-tep" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="hmK-VQ-A0e"/>
+                            <constraint firstItem="egg-Fv-Wdb" firstAttribute="top" secondItem="IUI-xU-xaL" secondAttribute="bottom" constant="60" id="iOv-fa-eBm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hKn-6B-6UC" secondAttribute="trailing" constant="60" id="lLD-nU-xGC"/>
+                            <constraint firstItem="bbh-we-Fzg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-10" id="rXh-at-0mH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="egg-Fv-Wdb" secondAttribute="trailing" constant="120" id="wpB-Lj-iNT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="GQS-OQ-aGR"/>
+                    <connections>
+                        <outlet property="passwordTextfield" destination="hKn-6B-6UC" id="aF8-EE-R6f"/>
+                        <outlet property="usernameTextfield" destination="id2-aR-TdG" id="Xbk-lT-dLL"/>
+                        <segue destination="DSV-Ts-5U1" kind="show" identifier="secondVC" id="674-TN-k50"/>
+                        <segue destination="EAq-mw-fWg" kind="popoverPresentation" identifier="newUserVC" popoverAnchorView="egg-Fv-Wdb" id="4Zz-8x-CWZ">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="133.92857142857142"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="3ZC-Rj-t07">
+            <objects>
+                <viewController id="DSV-Ts-5U1" customClass="SecondViewController" customModule="Surfing_Login_Screen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YXx-pb-z4V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfing background" translatesAutoresizingMaskIntoConstraints="NO" id="O5G-rj-72K">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hLN-3e-FOq">
+                                <rect key="frame" x="60" y="425.5" width="294" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wcG-xK-3f6">
+                                <rect key="frame" x="60" y="570" width="294" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="WQc-J4-MOE">
+                                <rect key="frame" x="80" y="104" width="254" height="68.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="50"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iix-Fj-SVg" customClass="CustomButton" customModule="Surfing_Login_Screen" customModuleProvider="target">
+                                <rect key="frame" x="80" y="759" width="254" height="53"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <state key="normal" title="Surf Out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="surfBackButtonPressed:" destination="DSV-Ts-5U1" eventType="touchUpInside" id="a19-aY-Yn2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVu-p0-Cbt">
+                                <rect key="frame" x="172" y="370.5" width="70" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favourite Surfing Location?" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IjZ-zQ-dUQ">
+                                <rect key="frame" x="57" y="515.5" width="300" height="34.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dEh-Ng-FAm" firstAttribute="trailing" secondItem="wcG-xK-3f6" secondAttribute="trailing" constant="60" id="3ly-hv-qR1"/>
+                            <constraint firstItem="dEh-Ng-FAm" firstAttribute="trailing" secondItem="IjZ-zQ-dUQ" secondAttribute="trailing" constant="57" id="4ok-T5-Qnv"/>
+                            <constraint firstItem="wcG-xK-3f6" firstAttribute="top" secondItem="IjZ-zQ-dUQ" secondAttribute="bottom" constant="20" id="8ok-MW-qZ9"/>
+                            <constraint firstItem="dEh-Ng-FAm" firstAttribute="bottom" secondItem="Iix-Fj-SVg" secondAttribute="bottom" constant="50" id="EPl-ex-jht"/>
+                            <constraint firstItem="dEh-Ng-FAm" firstAttribute="trailing" secondItem="hLN-3e-FOq" secondAttribute="trailing" constant="60" id="Hql-5e-HEF"/>
+                            <constraint firstItem="WQc-J4-MOE" firstAttribute="leading" secondItem="dEh-Ng-FAm" secondAttribute="leading" constant="80" id="Hvb-Sr-Bv9"/>
+                            <constraint firstItem="IjZ-zQ-dUQ" firstAttribute="top" secondItem="hLN-3e-FOq" secondAttribute="bottom" constant="60" id="JtV-oA-SKf"/>
+                            <constraint firstItem="wcG-xK-3f6" firstAttribute="leading" secondItem="dEh-Ng-FAm" secondAttribute="leading" constant="60" id="Kfk-yP-xZ1"/>
+                            <constraint firstItem="hLN-3e-FOq" firstAttribute="leading" secondItem="dEh-Ng-FAm" secondAttribute="leading" constant="60" id="LsG-An-Hfe"/>
+                            <constraint firstItem="tVu-p0-Cbt" firstAttribute="centerX" secondItem="YXx-pb-z4V" secondAttribute="centerX" id="N1t-bG-dOZ"/>
+                            <constraint firstItem="IjZ-zQ-dUQ" firstAttribute="leading" secondItem="dEh-Ng-FAm" secondAttribute="leading" constant="57" id="UAW-yD-3M7"/>
+                            <constraint firstItem="tVu-p0-Cbt" firstAttribute="centerY" secondItem="YXx-pb-z4V" secondAttribute="centerY" constant="-60" id="Yc0-nJ-A4g"/>
+                            <constraint firstItem="hLN-3e-FOq" firstAttribute="top" secondItem="tVu-p0-Cbt" secondAttribute="bottom" constant="20" id="ZPM-YC-zsP"/>
+                            <constraint firstItem="Iix-Fj-SVg" firstAttribute="leading" secondItem="dEh-Ng-FAm" secondAttribute="leading" constant="80" id="anq-mg-jKx"/>
+                            <constraint firstItem="dEh-Ng-FAm" firstAttribute="trailing" secondItem="Iix-Fj-SVg" secondAttribute="trailing" constant="80" id="bVU-Qj-ix2"/>
+                            <constraint firstItem="O5G-rj-72K" firstAttribute="top" secondItem="YXx-pb-z4V" secondAttribute="top" id="eFG-6S-RgU"/>
+                            <constraint firstItem="dEh-Ng-FAm" firstAttribute="trailing" secondItem="WQc-J4-MOE" secondAttribute="trailing" constant="80" id="k8m-PA-eGW"/>
+                            <constraint firstItem="WQc-J4-MOE" firstAttribute="top" secondItem="YXx-pb-z4V" secondAttribute="topMargin" constant="60" id="nbN-y6-tua"/>
+                            <constraint firstItem="O5G-rj-72K" firstAttribute="leading" secondItem="dEh-Ng-FAm" secondAttribute="leading" id="rTn-aN-Rig"/>
+                            <constraint firstItem="O5G-rj-72K" firstAttribute="trailing" secondItem="dEh-Ng-FAm" secondAttribute="trailing" id="tKm-dw-zkn"/>
+                            <constraint firstAttribute="bottom" secondItem="O5G-rj-72K" secondAttribute="bottom" id="wGk-5M-si7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dEh-Ng-FAm"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextfield" destination="hLN-3e-FOq" id="cut-V6-bOX"/>
+                        <outlet property="surfLocationTextfield" destination="wcG-xK-3f6" id="pjA-LK-cVN"/>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="backToVC" id="oKB-0q-zwP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m0G-Vq-NtN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2845" y="438"/>
+        </scene>
+        <!--New User Controller-->
+        <scene sceneID="3mv-LC-hC1">
+            <objects>
+                <viewController id="EAq-mw-fWg" customClass="NewUserController" customModule="Surfing_Login_Screen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BAa-Yi-DFf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfing background" translatesAutoresizingMaskIntoConstraints="NO" id="Hxh-bT-Zjq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pJI-Uk-6LH">
+                                <rect key="frame" x="60" y="463" width="294" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AAR-HF-ESb">
+                                <rect key="frame" x="60" y="523" width="294" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bn9-6H-YHE" customClass="CustomButton" customModule="Surfing_Login_Screen" customModuleProvider="target">
+                                <rect key="frame" x="80" y="759" width="254" height="53"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <state key="normal" title="Surf In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="surfLoginButtonPressed:" destination="EAq-mw-fWg" eventType="touchUpInside" id="WA4-Q8-GjS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfer" translatesAutoresizingMaskIntoConstraints="NO" id="gyH-aT-oab">
+                                <rect key="frame" x="30" y="144" width="354" height="219"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ahc-qG-BA9" firstAttribute="trailing" secondItem="bn9-6H-YHE" secondAttribute="trailing" constant="80" id="0bG-5N-iTP"/>
+                            <constraint firstItem="ahc-qG-BA9" firstAttribute="trailing" secondItem="Hxh-bT-Zjq" secondAttribute="trailing" id="0rH-AB-1UG"/>
+                            <constraint firstItem="pJI-Uk-6LH" firstAttribute="top" secondItem="gyH-aT-oab" secondAttribute="bottom" constant="100" id="1ba-so-dba"/>
+                            <constraint firstItem="ahc-qG-BA9" firstAttribute="trailing" secondItem="gyH-aT-oab" secondAttribute="trailing" constant="30" id="81R-eP-GmZ"/>
+                            <constraint firstItem="pJI-Uk-6LH" firstAttribute="leading" secondItem="ahc-qG-BA9" secondAttribute="leading" constant="60" id="8vo-Fh-hLB"/>
+                            <constraint firstItem="ahc-qG-BA9" firstAttribute="trailing" secondItem="AAR-HF-ESb" secondAttribute="trailing" constant="60" id="EvN-gw-e9V"/>
+                            <constraint firstItem="pJI-Uk-6LH" firstAttribute="centerY" secondItem="BAa-Yi-DFf" secondAttribute="centerY" constant="30" id="FRM-Yd-DUY"/>
+                            <constraint firstItem="AAR-HF-ESb" firstAttribute="leading" secondItem="ahc-qG-BA9" secondAttribute="leading" constant="60" id="FZN-hD-PJd"/>
+                            <constraint firstItem="Hxh-bT-Zjq" firstAttribute="leading" secondItem="ahc-qG-BA9" secondAttribute="leading" id="G6m-86-pnZ"/>
+                            <constraint firstItem="AAR-HF-ESb" firstAttribute="centerY" secondItem="BAa-Yi-DFf" secondAttribute="centerY" constant="90" id="IWa-KI-qvh"/>
+                            <constraint firstItem="ahc-qG-BA9" firstAttribute="trailing" secondItem="pJI-Uk-6LH" secondAttribute="trailing" constant="60" id="Lke-UO-4qF"/>
+                            <constraint firstAttribute="bottom" secondItem="Hxh-bT-Zjq" secondAttribute="bottom" id="QP6-Qf-1kR"/>
+                            <constraint firstItem="Hxh-bT-Zjq" firstAttribute="top" secondItem="BAa-Yi-DFf" secondAttribute="top" id="jO3-l4-qaE"/>
+                            <constraint firstItem="ahc-qG-BA9" firstAttribute="bottom" secondItem="bn9-6H-YHE" secondAttribute="bottom" constant="50" id="lcW-2w-GnR"/>
+                            <constraint firstItem="bn9-6H-YHE" firstAttribute="leading" secondItem="ahc-qG-BA9" secondAttribute="leading" constant="80" id="pv9-24-Ir3"/>
+                            <constraint firstItem="gyH-aT-oab" firstAttribute="leading" secondItem="ahc-qG-BA9" secondAttribute="leading" constant="30" id="pwF-zx-QnD"/>
+                            <constraint firstItem="gyH-aT-oab" firstAttribute="top" secondItem="ahc-qG-BA9" secondAttribute="top" constant="100" id="rQk-rI-Ju4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ahc-qG-BA9"/>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextfield" destination="AAR-HF-ESb" id="bU6-j2-FsH"/>
+                        <outlet property="usernameTextfield" destination="pJI-Uk-6LH" id="uAp-Cc-rtQ"/>
+                        <segue destination="DSV-Ts-5U1" kind="show" identifier="secondVC" id="vRx-Nr-nGj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rrP-mx-1Vi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2845" y="-333"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="b8e-9Z-dpU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="K7J-xu-G0w" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z0E-GT-NvQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fUv-3Y-f9I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xY3-Wo-zbx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1155" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="surfer" width="512" height="512"/>
+        <image name="surfing background" width="600" height="1064"/>
+        <image name="wave art" width="1024" height="200"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="vRx-Nr-nGj"/>
+        <segue reference="oKB-0q-zwP"/>
+    </inferredMetricsTieBreakers>
 </document>
