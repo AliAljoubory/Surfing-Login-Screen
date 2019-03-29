@@ -28,6 +28,11 @@ class SecondViewController: UIViewController {
             }
             print("Data saved successfully!")
             print(Realm.Configuration.defaultConfiguration.fileURL!)
+            
+            let ac = UIAlertController(title: "Data saved!", message: "Your preferences have been saved.", preferredStyle: .actionSheet)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            
+            present(ac, animated: true)
         } catch {
             print("Error: \(error)")
         }
